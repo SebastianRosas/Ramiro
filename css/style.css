@@ -1,0 +1,302 @@
+@font-face {
+    font-family: "Authentic";
+    src: url("../assets/tipography/AUTHENTICSans-60.woff2");
+}
+@font-face {
+    font-family: "Authentictitulo";
+    src: url("../assets/tipography/AUTHENTICSans-130.woff");
+}
+
+h1{
+    font-family: "Authentictitulo";
+}
+
+a{
+    font-family: "Authentic";
+    text-decoration: none;
+}
+
+h2 {
+    font-family: "Authentic";
+}
+
+h3 {
+    font-family: "Authentic";
+    color: blue;
+}
+
+h4{
+    font-family: "Authentic";
+  color: blue;
+}
+
+h6{
+    font-family: "Authentic";
+}
+
+body{
+    margin: 0;
+}
+
+/* HOME */
+
+#section1{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 218vw;
+}
+
+.Ramirotitulo{
+    z-index: 10;
+    z-index: 2;
+    font-size: 20vw;
+    color: blue;
+    position: absolute;
+    left: 16vw;
+    
+}
+
+.logohome{
+    z-index:  15;
+    width: 15vw;
+    position: absolute;
+    top: 11vw;
+    left: 43vw;
+    position: fixed;
+}
+
+.nosotros{
+    z-index: 12;
+    position: absolute;
+    top: 105vw;
+    left: 93vw;
+    font-size: 1.5vw;
+    color: blue;
+}
+
+.shop{
+    z-index: 13;
+    position: absolute;
+    top: 100vw;
+    left: 93vw;
+    font-size: 1.5vw;
+    color: blue; 
+}
+
+.contacto{
+    z-index: 14;
+    position: absolute;
+    top: 95vw;
+    left: 93vw;
+    font-size: 1.5vw;
+    color: blue; 
+}
+
+/* VINOS */
+
+
+.krontiras{
+    z-index: 1;
+    width: 30vw;
+    position: absolute;
+    top: 68vw;
+    left: 10vw;
+}
+
+.titulokrontiras{
+    z-index: 2;
+    font-size: 10vw;
+    color: blue;
+    position: absolute;
+    top: 53vw;
+    left: 12vw;
+}
+
+.krontirasdescripcion{
+    z-index: 16;
+    font-size: 1vw;
+    position: absolute;
+    top: 95vw;
+    left: 30vw;
+    color: blue;
+}
+
+.comprarkrontiras{
+    position: absolute;
+    top: 80vw;
+    left: 80vw;
+    font-size: 1.2vw;
+    color: blue;
+}
+
+.precioKrontiras{
+    position: absolute;
+    top: 97vw;
+    left: 10vw;
+    font-size: 1vw;
+    color: blue;
+}
+
+.titulorocamadre{
+    z-index: 5;
+    font-size: 10vw;
+    color: blue;
+    position: absolute;
+    top: 105vw;
+    left: 38vw;
+}
+
+.rocamadre{
+    z-index: 4;
+    width: 30vw;
+    position: absolute;
+    top: 120vw;
+    left: 60vw;
+}
+
+.rocamadredescripcion{
+    z-index: 17;
+    font-size: 1vw;
+    position: absolute;
+    top: 147vw;
+    left: 47vw;
+    color: blue;
+}
+
+.comprarrocamadre{
+    position: absolute;
+    top: 132vw;
+    left: 12vw;
+    font-size: 1.2vw;
+    color: blue;
+}
+
+.precioRocamadre{
+    position: absolute;
+    top: 149vw;
+    left: 86.7vw;
+    font-size: 1vw;
+    color: blue;
+}
+
+.titulopielihueso{
+    z-index: 8;
+    font-size: 10vw;
+    color: blue;
+    position: absolute;
+    top: 160vw;
+    left: 12vw;
+}
+
+.pielihueso{
+    z-index: 7;
+    width: 30vw;
+    position: absolute;
+    top: 175vw;
+    left: 10vw;
+}
+
+.pielihuesodescripcion{
+    z-index: 18;
+    font-size: 1vw;
+    position: absolute;
+    top: 202vw;
+    left: 30vw;
+    color: blue;
+}
+
+.comprarpielihueso{
+    position: absolute;
+    top: 188vw;
+    left: 80vw;
+    font-size: 1.2vw;
+    color: blue;
+}
+
+.precioPielihueso{
+    position: absolute;
+    top: 203.8vw;
+    left: 10vw;
+    font-size: 1vw;
+    color: blue;
+    
+}
+
+
+/* NOSOTROS */
+
+.bodyNosotros{
+    margin: 0;
+    display: flex;
+    position: relative;
+    width: 100%;
+   height: 100%;
+    background-color: blue;
+}
+
+.volverNosotros{
+font-size: 1.5vw;
+position: absolute;
+top: 22vw;
+left: 2vw;
+color: white;
+letter-spacing: 2px;
+}
+
+.descripcionNosotros{
+    color: white;
+    font-size: 2.2vw;
+    position: absolute;
+    top: 1vw;
+    left: 4vw;
+    letter-spacing: 2px;
+    line-height: 3vw;
+}
+
+/* CONTACTO */
+
+.bodyContacto{
+    margin: 0;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contactoTitulo{
+font-size: 2.2vw;
+position: absolute;
+left: 3vw;
+letter-spacing: 2px;
+}
+
+.ramiroEmail{
+font-size: 1.2vw;
+position: absolute;
+top: 2.5vw;
+left: 1.6vw;
+}
+
+.ramiroInstagram{
+font-size: 1.2vw;
+position: absolute;
+top: 8vw;
+left: 3.1vw;
+}
+
+.volverContacto{
+ font-size: 1.5vw;
+position: absolute;
+top: 22vw;
+left: 1.8vw;
+letter-spacing: 2px;
+}
+
+.logoContacto{
+    width: 15vw;
+    position: absolute;
+    top: 15vw;
+    left: 3vw;
+}
+
