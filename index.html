@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
@@ -7,65 +8,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramiro</title>
 </head>
+
 <body>
 
-<!-- HOME -->
+    <!-- HOME -->
 
-<div id="section1">
-    <div>
-        <h1 class="Ramirotitulo">Ramiro</h1>
-        <a href="#"><img src="logo.png" alt="logowachin" class="logohome"></a>
-        <ul>
-    <a href="pages/nosotros.html" class="nosotros">Nosotros</a>
-    <a href="pages/tienda.html" class="shop">Shop</a>
-    <a href="pages/contacto.html" class="contacto">Contacto</a>
-        </ul>
-</div>
-    <div>
-    <!-- Krontiras -->
-    <h2 id="seleccion" class="titulokrontiras">Krontiras</h2>
-<img src="krontirasmano.jpg" alt="vinokrontiras" class="krontiras">
-<h4 class="krontirasdescripcion"> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-    Quia perferendis maiores beatae labore non error quae <br>
-    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
-    saepe ea, voluptates porro accusantium repellendus fugit. <br>
-    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
-    Quia perferendis maiores beatae labore non error quae. <br>
-</h4>
-<a href="#" class="comprarkrontiras">Agregar al carrito</a>
-<h6 class="precioKrontiras">$ 850</h6>
-<!-- Rocamadre -->
- <h2 class="titulorocamadre">Rocamadre</h2>
- <img src="rocamadreruido.JPG" alt="vinorocamadre" class="rocamadre">
- <h4 class="rocamadredescripcion"> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-    Quia perferendis maiores beatae labore non error quae <br>
-    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
-    saepe ea, voluptates porro accusantium repellendus fugit. <br>
-    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
-    Quia perferendis maiores beatae labore non error quae. <br>
-</h4>
-<a href="#" class="comprarrocamadre">Agregar al carrito</a>
-<h6 class="precioRocamadre">$ 1.100</h6>
-<!-- Pielihueso -->
-<h2 class="titulopielihueso">Pielihueso</h2>
-<img src="pielihuesochica.jpg" alt="vinopielihueso" class="pielihueso">
-<h4 class="pielihuesodescripcion"> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-    Quia perferendis maiores beatae labore non error quae <br>
-    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
-    saepe ea, voluptates porro accusantium repellendus fugit. <br>
-    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
-    Quia perferendis maiores beatae labore non error quae. <br>
-</h4>
-<a href="#" class="comprarpielihueso">Agregar al carrito</a>
-<h6 class="precioPielihueso">$ 900</h6>
-</div>
+    <div id="section1">
+        <div>
+            <h1 class="Ramirotitulo">Ramiro</h1>
+            <img src="logo.png" alt="logowachin" class="logohome">
+        </div>
 
-</div>
+        <div>
+            <ul>
+                <a href="#"><img src="assets/images/carrito.png" alt="carritologo" class="carritologo"
+                        onclick="openCart(event)"></a>
+                <ul id="contenedorCart" class="contenedorCart">
+                    <span class="shoppingCartItemContainer"></span>
+                </ul>
+            </ul>
+        </div>
 
-<script src="app.js"></script>
+        <div>
+            <!-- Krontiras -->
+            <div class="item">
+                <h2 id="seleccion" class="titulokrontiras item-title">Krontiras</h2>
+                <img src="krontirasmano.jpg" alt="vinokrontiras" class="krontiras item-image">
+                <h4 class="krontirasdescripcion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Quia perferendis maiores beatae labore non error quae <br>
+                    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
+                    saepe ea, voluptates porro accusantium repellendus fugit. <br>
+                    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
+                    Quia perferendis maiores beatae labore non error quae. <br>
+                </h4>
+                <a href="#" class="comprarkrontiras addToCart">Agregar al carrito</a>
+                <h6 class="precioKrontiras item-price">$ 850</h6>
+            </div>
+            <!-- Rocamadre -->
+            <div class="item">
+                <h2 class="titulorocamadre item-title">Rocamadre</h2>
+                <img src="rocamadreruido.JPG" alt="vinorocamadre" class="rocamadre item-image">
+                <h4 class="rocamadredescripcion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Quia perferendis maiores beatae labore non error quae <br>
+                    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
+                    saepe ea, voluptates porro accusantium repellendus fugit. <br>
+                    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
+                    Quia perferendis maiores beatae labore non error quae. <br>
+                </h4>
+                <a href="#" class="comprarrocamadre addToCart">Agregar al carrito</a>
+                <h6 class="precioRocamadre item-price">$ 1.100</h6>
+            </div>
+            <!-- Pielihueso -->
+            <div class="item">
+                <h2 class="titulopielihueso item-title">Pielihueso</h2>
+                <img src="pielihuesochica.jpg" alt="vinopielihueso" class="pielihueso item-image">
+                <h4 class="pielihuesodescripcion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Quia perferendis maiores beatae labore non error quae <br>
+                    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
+                    saepe ea, voluptates porro accusantium repellendus fugit. <br>
+                    fuga obcaecati minima, aliquid laboriosam sequi velit <br>
+                    Quia perferendis maiores beatae labore non error quae. <br>
+                </h4>
+                <a href="#" class="comprarpielihueso addToCart">Agregar al carrito</a>
+                <h6 class="precioPielihueso item-price">$ 900</h6>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
 
 </body>
+
 </html>

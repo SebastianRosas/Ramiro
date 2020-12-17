@@ -300,3 +300,26 @@ letter-spacing: 2px;
     left: 3vw;
 }
 
+.carritologo{
+    z-index: 1000;
+    position: fixed;
+    width: 3vw;
+    left: 93vw;
+    top: 3vw;
+}
+
+.contenedorCart{
+    display: none;
+    z-index: 18;
+    position: fixed;
+    left: 79vw;
+    top: 5.4vw;
+    background-color: blue;
+    width: 10vw;
+    height: 24vw;
+    border: solid black 0.2vw;
+}
+
+.contenedorCart.open{
+    display: block !important; 
+}
