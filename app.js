@@ -23,12 +23,11 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
     const shoppingCartRow = document.createElement('div');
 
     const shoppingCartContent = `
-        <div class="item">
-        <h2 id="seleccion" class="titulokrontiras item-title">${itemTitle}</h2>
-        <img src="${itemImage}" alt="vinokrontiras" class="krontiras item-image">
-        <a href="#" class="comprarkrontiras addToCart">Agregar al carrito</a>
-        <h6 class="precioKrontiras item-price">${itemPrice}</h6>
-        </div>`;
+    <div class="item">
+    <h2 id="seleccion" class="carrito-title">${itemTitle}</h2>
+    <img src="${itemImage}" class="carrito-img">
+    <h6 class="carrito-price">${itemPrice}</h6>
+    </div>`;
 
         shoppingCartRow.innerHTML = shoppingCartContent
         shoppingCartItemContainer.append(shoppingCartRow);
