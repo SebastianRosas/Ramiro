@@ -37,15 +37,30 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
 console.log(addItemToShoppingCart);
 
 
-let cartContainer = document.querySelector('.contenedorCart');
 
-function openCart(event) {
-    if (cartContainer.className == 'contenedorCart') {
-        cartContainer.className = 'contenedorCart open';
-    } else {
-        cartContainer.className = 'contenedorCart';
-    }
-    event.preventDefault()
-}
+const perrito = $('ul').click( function(){
+    $('.contenedorCart').fadeToggle('fast');
+})
+
+console.log(perrito);
 
 
+$(document).ready(function() {
+    $(".bodyMenu").css("transition", "1s");
+    $(".bodyMenu").css("background", "white");
+ });  
+
+ $(document).ready(function() {
+    $(".bodyNosotros").css("transition", "1s"); 
+    $(".bodyNosotros").css("background", "blue"); 
+ }); 
+
+ $(document).ready(function() {
+    $(".bodyContacto").css("transition", "1s"); 
+    $(".bodyContacto").css("background", "white"); 
+ });  
+
+ $(document).ready(function() {
+    $(".bodyIndex").css("transition", "1s"); 
+    $(".bodyIndex").css("background", "white");
+ });  

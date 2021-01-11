@@ -9,20 +9,20 @@
     <title>Ramiro</title>
 </head>
 
-<body>
+<body class="bodyIndex">
 
     <!-- HOME -->
 
     <div id="section1">
         <div>
             <h1 class="Ramirotitulo">Ramiro</h1>
-            <img src="logo.png" alt="logowachin" class="logohome">
+            <a href="/pages/menu.html"><img src="logo.png" alt="logowachin" class="logohome"></a>
         </div>
 
         <div>
             <ul>
-                <a href="#"><img src="assets/images/carrito.png" alt="carritologo" class="carritologo"
-                        onclick="openCart(event)"></a>
+                <span><img src="assets/images/carrito.png" alt="carritologo" class="carritologo"
+                    ></span>
                 <ul id="contenedorCart" class="contenedorCart">
                     <span class="shoppingCartItemContainer"></span>
                 </ul>
@@ -79,7 +79,7 @@
         </div>
 
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
 
 </body>
