@@ -1,3 +1,5 @@
+// Cart functionality
+
 const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
 
 addToShoppingCartButtons.forEach(addToCartButton => {
@@ -23,26 +25,39 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
     const shoppingCartRow = document.createElement('div');
 
     const shoppingCartContent = `
-    <div class="item">
+    <div class="item shoppingCartItem">
     <h2 id="seleccion" class="carrito-title">${itemTitle}</h2>
     <img src="${itemImage}" class="carrito-img">
-    <h6 class="carrito-price">${itemPrice}</h6>
+    <div>
+    <button class="deleteButton">X</button>
+    <input class="quantityInput" type="number" id="quantity" name="quantity" min="1" value="1">
+    </div>
+    <h6 class="carrito-price shoppingCartItemPrice">${itemPrice}</h6>
     </div>`;
 
         shoppingCartRow.innerHTML = shoppingCartContent
         shoppingCartItemContainer.append(shoppingCartRow);
-
+        updateShoppingCartTotal()
 }
 
-console.log(addItemToShoppingCart);
+function updateShoppingCartTotal(){
+    let total = 0;
+
+    const shoppingCartItems = querySelectorAll('.shoppingCartItem');
+    shoppingCartItems.forEach(shoppingCartItem => {
+        const shoppingCartItemPriceElement = shoppingCartItem.querySelector('.shoppingCartItemPrice')
+    });
+   
+} 
 
 
 
-const perrito = $('ul').click( function(){
+
+// Jquery Efects 
+
+const cartEfect = $('.open').click( function(){
     $('.contenedorCart').fadeToggle('fast');
 })
-
-console.log(perrito);
 
 
 $(document).ready(function() {
@@ -63,4 +78,9 @@ $(document).ready(function() {
  $(document).ready(function() {
     $(".bodyIndex").css("transition", "1s"); 
     $(".bodyIndex").css("background", "white");
+ });  
+
+ $(document).ready(function() {
+    $(".bodyComprar").css("transition", "1s"); 
+    $(".bodyComprar").css("background", "blue");
  });  
