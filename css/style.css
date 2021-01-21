@@ -402,16 +402,16 @@ font-size: 0.7vw;
     color: white;
 }
 
-.deleteButton{
-    font-family: "Authentictitulo";
+.buttonDelete{
+    font-size: 0.8vw;
+    border: none;
     cursor: pointer;
-    font-size: 0.7vw;
     position: absolute;
-    top: 4.3vw;   
-   padding-left: 8vw;
+    top: 4.4vw;
+    left: 9.5vw;
     background: none;
     color: white;
-    border: none;
+    
 }
 
 .quantityInput{
@@ -421,7 +421,9 @@ font-size: 0.7vw;
     width: 2vw;
     position: absolute;
     top: 4.3vw;   
-    padding-left: 5vw;
+    left: 7vw;
+    width: 35px;
+    font-size: 0.8vw;
 }
 
 .bodyComprar{

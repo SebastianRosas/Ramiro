@@ -29,30 +29,49 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
     <h2 id="seleccion" class="carrito-title">${itemTitle}</h2>
     <img src="${itemImage}" class="carrito-img">
     <div>
-    <button class="deleteButton">X</button>
-    <input class="quantityInput" type="number" id="quantity" name="quantity" min="1" value="1">
+    <button class="buttonDelete">X</button>
+    <input class="quantityInput shoppingCartItemQuantity" type="number" id="quantity" name="quantity" min="1" value="1">
     </div>
     <h6 class="carrito-price shoppingCartItemPrice">${itemPrice}</h6>
     </div>`;
 
         shoppingCartRow.innerHTML = shoppingCartContent
         shoppingCartItemContainer.append(shoppingCartRow);
+
+        shoppingCartRow
+        .querySelector('.buttonDelete')
+        .addEventListener('click',removeShoppingCartItem );
+        
+        shoppingCartRow.querySelector('.shoppingCartItemQuantity').addEventListener('change', quantityChanged)
+
         updateShoppingCartTotal()
 }
 
 function updateShoppingCartTotal(){
     let total = 0;
-
-    const shoppingCartItems = querySelectorAll('.shoppingCartItem');
+    const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
     shoppingCartItems.forEach(shoppingCartItem => {
         const shoppingCartItemPriceElement = shoppingCartItem.querySelector('.shoppingCartItemPrice')
+        .innerHTML.split(" ")[1].replace(".", "")
+        total = total + parseInt(shoppingCartItemPriceElement)
     });
-   
-} 
+   document.querySelector(".shoppingCartTotal").textContent = `$${total}`
+}
 
+function removeShoppingCartItem(event){
+    const buttonclicked = event.target;
 
+ buttonclicked.closest('shoppingCartItem').remove()
+ updateShoppingCartTotal();
 
+}
 
+function quantityChanged(event){
+    const inputQuantity = event.target;
+    updateShoppingCartTotal()
+}
+
+console.log(quantityChanged);
 // Jquery Efects 
 
 const cartEfect = $('.open').click( function(){
