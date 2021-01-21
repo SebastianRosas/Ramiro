@@ -22,11 +22,25 @@ function addToCartClicked(event) {
 }
 
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
+    // No repetir producto
+
+    const elementsTitle = shoppingCartItemContainer.getElementsByClassName('shopppingCartItemTitle');
+
+    for(let i = 0; i < elementsTitle.length; i++){
+        if (elementsTitle[i].innerText === itemTitle){
+           let elementQuantity = elementsTitle[i].parentElement.querySelector('.shoppingCartItemQuantity');
+           elementQuantity.value++;
+           updateShoppingCartTotal()
+           return;
+        }
+    }
+
+
     const shoppingCartRow = document.createElement('div');
 
     const shoppingCartContent = `
     <div class="item shoppingCartItem">
-    <h2 id="seleccion" class="carrito-title">${itemTitle}</h2>
+    <h2 id="seleccion" class="carrito-title shopppingCartItemTitle">${itemTitle}</h2>
     <img src="${itemImage}" class="carrito-img">
     <div>
     <button class="buttonDelete">X</button>
@@ -37,11 +51,9 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
 
         shoppingCartRow.innerHTML = shoppingCartContent
         shoppingCartItemContainer.append(shoppingCartRow);
-
-        shoppingCartRow
-        .querySelector('.buttonDelete')
-        .addEventListener('click',removeShoppingCartItem );
-        
+        // Borrar Productos
+        shoppingCartRow.querySelector('.buttonDelete').addEventListener('click',removeShoppingCartItem );
+        // Sumar Productos
         shoppingCartRow.querySelector('.shoppingCartItemQuantity').addEventListener('change', quantityChanged)
 
         updateShoppingCartTotal()
@@ -58,6 +70,8 @@ function updateShoppingCartTotal(){
    document.querySelector(".shoppingCartTotal").textContent = `$${total}`
 }
 
+// Borrar Productos
+
 function removeShoppingCartItem(event){
     const buttonclicked = event.target;
 
@@ -66,12 +80,13 @@ function removeShoppingCartItem(event){
 
 }
 
+// Sumar productos
+
 function quantityChanged(event){
     const inputQuantity = event.target;
     updateShoppingCartTotal()
 }
 
-console.log(quantityChanged);
 // Jquery Efects 
 
 const cartEfect = $('.open').click( function(){

@@ -406,9 +406,9 @@ font-size: 0.7vw;
     font-size: 0.8vw;
     border: none;
     cursor: pointer;
-    position: absolute;
-    top: 4.4vw;
-    left: 9.5vw;
+    position: relative;
+    left: 7.4vw;
+    top: -37.7px;
     background: none;
     color: white;
     
@@ -419,9 +419,9 @@ font-size: 0.7vw;
     background: none;
     border: none;
     width: 2vw;
-    position: absolute;
-    top: 4.3vw;   
-    left: 7vw;
+    position: relative;
+    left: 3vw;
+    top: -40px;
     width: 35px;
     font-size: 0.8vw;
 }
