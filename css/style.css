@@ -250,7 +250,7 @@ p{
 .volverNosotros{
 font-size: 1.5vw;
 position: absolute;
-top: 22vw;
+top: 46vw;
 left: 2vw;
 color: white;
 letter-spacing: 2px;
@@ -299,11 +299,11 @@ left: 3.1vw;
 }
 
 .volverContacto{
- font-size: 1.5vw;
-position: absolute;
-top: 22vw;
-left: 1.8vw;
-letter-spacing: 2px;
+    color: blue;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 44vw;
+    left: 2vw;
 }
 
 .logoContacto{
@@ -365,7 +365,13 @@ font-size: 0.7vw;
     background-color: blue;
 }
 
-
+.volverMenu{
+    color: blue;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 42vw;
+    left: 2vw;
+}
 
 .menuOpcionNosotros{
     color: blue;
@@ -382,9 +388,6 @@ font-size: 0.7vw;
     left: 2vw;
     top: 13vw;
     font-size: 5vw;
-}
-.volverMenu{
-    color: blue;
 }
 
 .buttonBuy{
@@ -448,3 +451,409 @@ letter-spacing: 2px;
     font-size: 0.9vw;
     color: white;
 }
+
+
+@media only screen and (min-width: 0px) and (max-width: 640px)  {
+    body{
+        overflow-x: hidden;
+        margin: 0px;
+      }
+  
+      /* HOME */
+
+      #section1{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 747vw;
+    }
+    
+    .Ramirotitulo{
+        z-index: 10;
+        z-index: 2;
+        font-size: 20vw;
+        color: blue;
+        position: absolute;
+        top: 55vw;
+        left: 16vw;
+        
+    } 
+    
+    
+    .logohome{
+        z-index:  2000;
+        width: 28vw;
+        position: absolute;
+        top: 54vw;
+        left: 22vw;
+        position: fixed;
+    }
+    
+    .nosotros{
+        z-index: 12;
+        position: absolute;
+        top: 105vw;
+        left: 93vw;
+        font-size: 1.5vw;
+        color: blue;
+    }
+    
+    
+    .contacto{
+        z-index: 14;
+        position: absolute;
+        top: 95vw;
+        left: 93vw;
+        font-size: 1.5vw;
+        color: blue; 
+    }
+
+    .carritologo{
+        cursor: pointer;
+        z-index: 1000;
+        position: fixed;
+        width: 10vw;
+        left: 84vw;
+        top: 6vw;
+    }
+    
+    .contenedorCart{
+        overflow-x: scroll;
+        z-index: 18;
+        position: fixed;
+        left: 55vw;
+        top: 15vw;
+        background-color: blue;
+        width: 19vw;
+        height: 100vw;
+        border: solid black 0.2vw;
+        padding-bottom: 1vw;
+    }
+    
+    .contenedorCart.open{
+        display: block !important; 
+    }
+    
+    .carrito-title{
+        color: white;
+    font-size: 5vw;
+    position: relative;
+    right: 8vw;
+    }
+    
+    .carrito-img{
+        width:15vw;
+        position: relative;
+        right: 8vw;
+    }
+    
+    .carrito-price{
+    color: white;
+    font-size: 3.4vw;
+    position: relative;
+    right: 8vw;
+    }
+
+    .buttonBuy{
+        border: solid black 0.2vw;
+       font-size: 3vw;
+       color: white;
+       background: none;
+       position: relative;
+       left: 3vw;
+       bottom: 2vw;
+         
+   }
+   
+   .totalTitleCart{
+       font-family: "Authentictitulo";
+       font-size: 5vw;
+       color: white;
+       position: relative;
+    right: 8vw;
+   }
+   
+   .buttonDelete{
+       font-size: 3vw;
+       border: none;
+       cursor: pointer;
+       position: relative;
+       top: 4.6vw;
+       background: none;
+       color: white;
+       
+   }
+   
+   .quantityInput{
+       color: white;
+       background: none;
+       border: none;
+       width: 2vw;
+       position: relative;
+       left: -9vw;
+       top: 17px;
+       width: 35px;
+       font-size: 3vw;
+   }
+
+   .shoppingCartTotalStyle{
+    font-size: 5vw;
+    color: white;
+    position: relative;
+    right: 8vw;
+}
+    
+    /* VINOS */
+    
+    
+    .krontiras{
+        z-index: 1;
+        width: 70vw;
+        position: absolute;
+        top: 230vw;
+        left: 17vw;
+    }
+    
+    .titulokrontiras{
+        z-index: 2;
+        font-size: 15vw;
+        color: blue;
+        position: absolute;
+        top: 207vw;
+        left: 33vw;
+    }
+    
+    .krontirasdescripcion{
+        z-index: 16;
+        font-size: 3vw;
+        position: absolute;
+        top: 330vw;
+        left: 13vw;
+        color: blue;
+    }
+    
+    .comprarkrontiras{
+        cursor: pointer;
+        position: absolute;
+        top: 315vw;
+        left: 12vw; 
+        font-size: 5vw;
+        color: blue;
+    }
+    
+    .precioKrontiras{
+        position: absolute;
+        top: 297vw;
+        left: 17vw;
+        font-size: 3.5vw;
+        color: blue;
+    }
+    
+    .titulorocamadre{
+        z-index: 5;
+        font-size: 15vw;
+        color: blue;
+        position: absolute;
+        top: 397vw;
+        left: 13vw;
+    }
+    
+    .rocamadre{
+        z-index: 4;
+        width: 70vw;
+        position: absolute;
+        top: 420vw;
+        left: 17vw;
+    }
+    
+    .rocamadredescripcion{
+        z-index: 17;
+        position: absolute;
+        top: 525vw;
+        color: blue;
+        font-size: 3vw;
+        left: 13vw;
+    }
+    
+    .comprarrocamadre{
+        cursor: pointer;
+        position: absolute;
+        top: 508vw;
+        color: blue;
+        left: 12vw; 
+        font-size: 5vw;
+    }
+    
+    .precioRocamadre{
+        position: absolute;
+        top: 487vw;
+        color: blue;
+        left: 17vw;
+        font-size: 3.5vw;
+    }
+    
+    .titulopielihueso{
+        z-index: 8;
+        font-size: 15vw;
+        color: blue;
+        position: absolute;
+        top: 576vw;
+        left: 18vw;
+    }
+    
+    .pielihueso{
+        z-index: 7;
+        width: 70vw;
+        position: absolute;
+        top: 600vw;
+        left: 17vw;
+    }
+    
+    .pielihuesodescripcion{
+        z-index: 18;
+        position: absolute;
+        top: 703vw;
+        color: blue;
+        font-size: 3vw;
+        left: 13vw;
+    }
+    
+    .comprarpielihueso{
+        cursor: pointer;
+        position: absolute;
+        top: 687vw;
+        color: blue;
+        left: 12vw; 
+        font-size: 5vw;
+    }
+    
+    .precioPielihueso{
+        position: absolute;
+        top: 666vw;
+        color: blue;
+        left: 17vw;
+        font-size: 3.5vw;
+ 
+    }
+
+
+/* MENU */
+
+.bodyMenu{
+    margin: 0;
+    display: flex;
+    position: relative;
+    width: 100%;
+   height: 100%;
+    background-color: blue;
+}
+
+
+
+.menuOpcionNosotros{
+    color: blue;
+    position: absolute;
+    left: 2vw;
+    top: 6vw;
+    font-size: 13vw;
+}
+
+
+.menuOpcionContacto{
+    color: blue;
+    position: absolute;
+    left: 2vw;
+    top: 22vw;
+    font-size: 13vw;
+}
+
+.volverMenu{
+    color: blue;
+    font-size: 10vw;
+    position: absolute;
+    top: 146vw;
+    left: 2vw;
+
+}
+
+/* NOSOTROS */
+
+.bodyNosotros{
+    margin: 0;
+    display: flex;
+    position: relative;
+    width: 100%;
+   height: 100%;
+    background-color: white;
+}
+
+.volverNosotros{
+font-size: 6vw;
+position: absolute;
+top: 163vw;
+left: 2vw;
+color: white;
+
+}
+
+.descripcionNosotros{
+    color: white;
+    font-size: 5vw;
+    line-height: 7vw;
+    position: absolute;
+    top: 1vw;
+    left: 4vw;
+    letter-spacing: 2px;
+}
+
+/* CONTACTO */
+
+.bodyContacto{
+    margin: 0;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.contactoTitulo{
+font-size: 13vw;
+position: absolute;
+left: 3vw;
+letter-spacing: 2px;
+}
+
+.ramiroEmail{
+font-size: 7vw;
+position: absolute;
+top: 12vw;
+left: 1.6vw;
+}
+
+.ramiroInstagram{
+font-size: 7vw;
+position: absolute;
+top: 39vw;
+left: 3.1vw;
+}
+
+.volverContacto{
+    font-size: 6vw;
+    position: absolute;
+    top: 157vw;
+    left: 2vw;
+color: blue;
+}
+
+.logoContacto{
+    width: 40vw;
+    position: absolute;
+    top: 75vw;
+    left: 3vw;
+  
+}
+
+
+}
+    

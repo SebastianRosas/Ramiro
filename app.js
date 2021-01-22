@@ -21,6 +21,18 @@ function addToCartClicked(event) {
     event.preventDefault()
 }
 
+function updateShoppingCartTotal(){
+    let total = 0;
+    const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
+    shoppingCartItems.forEach(shoppingCartItem => {
+        const shoppingCartItemPriceElement = shoppingCartItem.querySelector('.shoppingCartItemPrice')
+        .innerHTML.split(" ")[1].replace(".", "")
+        total = total + parseInt(shoppingCartItemPriceElement)
+    });
+   document.querySelector(".shoppingCartTotal").textContent = `$${total}`
+}
+
+
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
     // No repetir producto
 
@@ -57,17 +69,6 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
         shoppingCartRow.querySelector('.shoppingCartItemQuantity').addEventListener('change', quantityChanged)
 
         updateShoppingCartTotal()
-}
-
-function updateShoppingCartTotal(){
-    let total = 0;
-    const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
-    shoppingCartItems.forEach(shoppingCartItem => {
-        const shoppingCartItemPriceElement = shoppingCartItem.querySelector('.shoppingCartItemPrice')
-        .innerHTML.split(" ")[1].replace(".", "")
-        total = total + parseInt(shoppingCartItemPriceElement)
-    });
-   document.querySelector(".shoppingCartTotal").textContent = `$${total}`
 }
 
 // Borrar Productos
